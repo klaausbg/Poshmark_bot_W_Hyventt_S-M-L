@@ -9,7 +9,7 @@ const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 const POSHMARK_URL =
-  "https://poshmark.com/search?query=the%20north%20face%20hyvent&sort_by=added_desc&department=Women&category=Jackets_%26_Coats&brand%5B%5D=The%20North%20Face&color%5B%5D=Black&color%5B%5D=Gray&color%5B%5D=Brown&color%5B%5D=Blue&color%5B%5D=Tan&color%5B%5D=Gold&color%5B%5D=Orange&color%5B%5D=Yellow&size%5B%5D=M&price%5B%5D=-30";
+  "https://poshmark.com/search?query=the%20north%20face%20dryvent&sort_by=added_desc&brand%5B%5D=The%20North%20Face&department=Women&category=Jackets_%26_Coats&price%5B%5D=-35&size%5B%5D=M";
 
 async function sendTelegramMessage(message) {
   const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
