@@ -137,12 +137,7 @@ async function checkPoshmark() {
         const titleLower = item.title.toLowerCase();
         const hasFlaw = flaws.some((word) => titleLower.includes(word));
 
-        if (
-          item.title.toLowerCase().includes("hyvent") &&
-          ["M"].includes(item.size) &&
-          numericPrice <= 30 &&
-          !hasFlaw
-        ) {
+        if (!hasFlaw) {
           if (firstMatch) {
             await sendTelegramMessage("\u2063");
             await sendTelegramMessage(
