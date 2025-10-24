@@ -9,11 +9,7 @@ const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 const POSHMARK_URL =
-<<<<<<< HEAD
-  "https://poshmark.com/search?query=the%20north%20face%20dryvent&sort_by=added_desc&brand%5B%5D=The%20North%20Face&department=Women&category=Jackets_%26_Coats&price%5B%5D=-35&size%5B%5D=M&size%5B%5D=S&size%5B%5D=L";
-=======
   "https://poshmark.com/search?query=the%20north%20face%20hyvent&brand%5B%5D=The%20North%20Face&department=Women&category=Jackets_%26_Coats&size%5B%5D=S&size%5B%5D=M&size%5B%5D=L&price%5B%5D=-35";
->>>>>>> ce9d24d539e6385c87d7d5f00defc8fa8662bab9
 
 async function sendTelegramMessage(message) {
   const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
@@ -145,11 +141,7 @@ async function checkPoshmark() {
           if (firstMatch) {
             await sendTelegramMessage("\u2063");
             await sendTelegramMessage(
-<<<<<<< HEAD
-              "🔔 *You got new deals!*\n\nHere are the latest Women Dryvent Jackets:"
-=======
               "🔔 *You got new deals!*\n\nHere are the latest Women Hyvent Jackets:"
->>>>>>> ce9d24d539e6385c87d7d5f00defc8fa8662bab9
             );
             firstMatch = false;
           }
