@@ -1,15 +1,9 @@
 {
   "name": "poshmark-tracker",
   "version": "1.0.0",
-<<<<<<< HEAD
   "main": "hyvent.js",
   "scripts": {
     "start": "node hyvent.js",
-=======
-  "main": "ebay.js",
-  "scripts": {
-    "start": "node ebay.js",
->>>>>>> ce9d24d539e6385c87d7d5f00defc8fa8662bab9
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,17 +11,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
     "dotenv": "^16.5.0",
     "node-fetch": "^3.3.2",
     "pg": "^8.15.6",
-=======
-    "axios": "^1.12.2",
-    "cheerio": "^1.1.2",
-    "dotenv": "^16.6.1",
-    "node-fetch": "^3.3.2",
-    "pg": "^8.16.3",
->>>>>>> ce9d24d539e6385c87d7d5f00defc8fa8662bab9
     "puppeteer": "^24.7.1"
   }
 }
